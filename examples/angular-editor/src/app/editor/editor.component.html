@@ -1,0 +1,14 @@
+<button (click)="toggleBold()">bold</button>
+<button (click)="toggleItalic()">italic</button>
+<select #sizeField>
+<option value='6'>6</option>
+<option value='12'>12</option>
+<option value='24'>24</option>
+<option value='36'>36</option>
+<option value='48'>48</option>
+</select>
+<button (click)="setSize(sizeField.value)">size</button>
+<button (click)="exec('undo')">undo</button>
+<button (click)="exec('redo')">redo</button>
+
+<div #divEditor></div>
